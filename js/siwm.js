@@ -16,8 +16,8 @@
 ////////////////////////////////////////////////////////////////
 var trials = 50; //total number of trials per run
 var donetrials = 0; //number of trials completed in this run
-var xlocs = [150,175,200,225,250,275,300,-150,-175,-200,-225,-250,-275,-300]; //possible locations CHANGE THIS!
-var ylocs = [150,175,200,225,250,275,300,-150,-175,-200,-225,-250,-275,-300]; //possible locations CHANGE THIS!
+var ang = [15,25,35,45,55,65,75,105,115,125,135,145,155,165,195,205,215,225,235,245,255,285,295,305,315,325,335,345]; // possible angles
+var ecc = 300; // stimulus eccentricity in pixels from fixation
 var userans = null; //user response (left = 1, right = 0)
 var corans = null; //correct response (left = 1, right = 0)
 var del = [1500,2000,2500,3000,3500]; //possible delay periods
@@ -49,7 +49,6 @@ function init(svg) {
 
 function taskloop(svg){
   if (donetrials<trials){
-    //display 4 dot sequence
     userans = null;
     drawStimulus(svg);
   }
@@ -106,14 +105,15 @@ function clearStimulus(svg) {
 ////////////////////////////////////////////////////////////////
 function drawStimulus(svg) {
   clearStimulus(svg);
-shuffle(xlocs);
-shuffle(ylocs);
+  shuffle(ang);
+  cirx = ecc * Math.cos(ang[1]);
+  ciry = ecc * Math.sin(ang[1]);
   var circle1 = svg.append("circle");
-  circle1.attr("cx", 1024/2 - xlocs[1])
-         .attr("cy", 768/2 - ylocs[1])
+  circle1.attr("cx", 1024/2 + cirx)
+         .attr("cy", 768/2 + ciry)
        .attr('r', 10)
-       .attr("fill","white")
-       .attr("stroke","white")
+       .attr("fill","black")
+       .attr("stroke","black")
        .attr("stroke-width", 3);
 
   var fixation = svg.append("circle");

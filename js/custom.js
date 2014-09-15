@@ -30,17 +30,17 @@ var feedbackmsg = "no feedback"; //feedback message string
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
-////////////////////////////////////////////////////////////////		
+////////////////////////////////////////////////////////////////
 function onKeyDown(evt) {
   	if (evt.keyCode == 39) userans = 1;
   	else if (evt.keyCode == 37) userans = 0;
 }
-		
+
 function onKeyUp(evt) {
   	if (evt.keyCode == 39) userans = 1;
   	else if (evt.keyCode == 37) userans = 0;
 }
-		
+
 $(document).keydown(onKeyDown);
 $(document).keyup(onKeyUp);
 
@@ -107,9 +107,9 @@ function clearStimulus(svg) {
 }
 
 ////////////////////////////////////////////////////////////////
-// DRAW STIMULI 
+// DRAW STIMULI
 ////////////////////////////////////////////////////////////////
-function drawStimulus1(svg) {	
+function drawStimulus1(svg) {
 clearStimulus(svg);
 	shuffle(locs);
 	var circle1 = svg.append("circle");
@@ -119,7 +119,7 @@ clearStimulus(svg);
 		   .attr("fill","red")
 		   .attr("stroke","red")
 		   .attr("stroke-width", 3);
-		   
+
 	var fixation = svg.append("circle");
 	fixation.attr("cx", 1024/2)
 	        .attr("cy", 768/2)
@@ -127,7 +127,7 @@ clearStimulus(svg);
 		    .attr("fill","black")
 		    .attr("stroke","black")
 		    .attr("stroke-width", 3);
-		   
+
 	if (prob==1){
 			procx = circle1.attr("cx");
 			procy = circle1.attr("cy");
@@ -135,7 +135,7 @@ clearStimulus(svg);
 			profill = circle1.attr("fill");
 			prostroke = circle1.attr("stroke");
 			prostrokewidth = circle1.attr("stroke-width");
-	}	   
+	}
 	return setTimeout(function() {drawStimulus2(svg)},200);
 }
 
@@ -157,7 +157,7 @@ function drawStimulus2(svg) {
 		    .attr("fill","black")
 		    .attr("stroke","black")
 		    .attr("stroke-width", 3);
-		   
+
 	if (prob==2){
 			procx = circle2.attr("cx");
 			procy = circle2.attr("cy");
@@ -166,7 +166,7 @@ function drawStimulus2(svg) {
 			prostroke = circle2.attr("stroke");
 			prostrokewidth = circle2.attr("stroke-width");
 	}
-		   
+
 	return setTimeout(function() {drawStimulus3(svg)},200);
 }
 
@@ -188,7 +188,7 @@ function drawStimulus3(svg) {
 		    .attr("fill","black")
 		    .attr("stroke","black")
 		    .attr("stroke-width", 3);
-		   
+
 	if (prob==3){
 			procx = circle3.attr("cx");
 			procy = circle3.attr("cy");
@@ -196,7 +196,7 @@ function drawStimulus3(svg) {
 			profill = circle3.attr("fill");
 			prostroke = circle3.attr("stroke");
 			prostrokewidth = circle3.attr("stroke-width");
-	}	   
+	}
 	return setTimeout(function() {drawStimulus4(svg)},200);
 }
 
@@ -210,7 +210,7 @@ function drawStimulus4(svg) {
 		   .attr("fill","white")
 		   .attr("stroke","white")
 		   .attr("stroke-width", 3);
-		   
+
 	var fixation = svg.append("circle");
 	fixation.attr("cx", 1024/2)
 	        .attr("cy", 768/2)
@@ -227,7 +227,7 @@ function drawStimulus4(svg) {
 			prostroke = circle4.attr("stroke");
 			prostrokewidth = circle4.attr("stroke-width");
 	}
-		   
+
 	return setTimeout(function() {delayperiod(svg)},200);
 }
 
@@ -244,14 +244,14 @@ function delayperiod(svg){
 		    .attr("fill","black")
 		    .attr("stroke","black")
 		    .attr("stroke-width", 3);
-	
+
 	shuffle(del);
 	return setTimeout(probe,del[1]);
 }
 
 ////////////////////////////////////////////////////////////////
 // DISPLAY PROBE
-////////////////////////////////////////////////////////////////		
+////////////////////////////////////////////////////////////////
 function probe(){
 	var probecircle = svg.append("circle");
 	probecircle.attr("cx", procx)
@@ -261,7 +261,7 @@ function probe(){
 		   .attr("stroke",prostroke)
 		   .attr("stroke-width", prostrokewidth);
 	corans = 1;
-	
+
 	var fixation = svg.append("circle");
 	fixation.attr("cx", 1024/2)
 	        .attr("cy", 768/2)
@@ -269,17 +269,17 @@ function probe(){
 		    .attr("fill","black")
 		    .attr("stroke","black")
 		    .attr("stroke-width", 3);
-	
+
 	return setTimeout(getresponse,1200);
 }
 
 ////////////////////////////////////////////////////////////////
 // GET USER RESPONSE AND GIVE FEEDBACK
-////////////////////////////////////////////////////////////////		
+////////////////////////////////////////////////////////////////
 function getresponse(){
 	feedback();
 }
-		
+
 function feedback(){
 	if(corans==userans){
 		feedbackmsg = "Correct!";
@@ -311,16 +311,16 @@ function feedback(){
 		       .attr("stroke","red")
 		       .attr("stroke-width", 5);
 	}
-			
+
 	// alert(feedbackmsg);
-			
+
 	donetrials = donetrials + 1;
 	return setTimeout(function() {taskloop(svg)},1000);
 }
 
 ////////////////////////////////////////////////////////////////
 // END TASK
-////////////////////////////////////////////////////////////////		
+////////////////////////////////////////////////////////////////
 function taskend(){
 	// alert('Task complete!')
 }
@@ -350,4 +350,3 @@ function doTrial(svg) {
 var svg = makeStage(1024,768);
 
 doTrial(svg);
-

@@ -4,12 +4,13 @@
 // TO DO LIST
 ////////////////////////////////////////////////////////////////
 //  Add x_axis jitter for probe with correct sampling distribution
-//	Create correct eccentricity annulis
 //	Calculate/store variables: %Cor, RT
 //	Incorporate PsiTurk
 //	Configure multiple runs (add "next" button?)
 //	Make it game-like: explosions for correct/incorrect answers?
 //	Add a scoreboard and develop points system (beat high score?)
+//  Add paper ruler to get pixel -> visual angle transform
+//  Add RSVP stream at fixation
 
 ////////////////////////////////////////////////////////////////
 // DECLARE TRIAL VARIABLES
@@ -20,6 +21,8 @@ var ang = [15,25,35,45,55,65,75,105,115,125,135,145,155,165,195,205,215,225,235,
 var ecc = 300; // stimulus eccentricity in pixels from fixation
 var userans = null; //user response (left = 1, right = 0)
 var corans = null; //correct response (left = 1, right = 0)
+var jitter = [10,50,100]; //jittered test location widths
+var lr = [0,1]; //left or right probe
 var del = [1500,2000,2500,3000,3500]; //possible delay periods
 var listenkey = false; //do we want user input now?
 var feedbackmsg = "no feedback"; //feedback message string
@@ -131,7 +134,6 @@ function drawStimulus(svg) {
       prostroke = circle1.attr("stroke");
       prostrokewidth = circle1.attr("stroke-width");
 
-
   return setTimeout(function() {delayperiod(svg)},200);
 }
 
@@ -157,15 +159,31 @@ function delayperiod(svg){
 // DISPLAY PROBE
 ////////////////////////////////////////////////////////////////
 function probe(){
+  shuffle(jitter);
+  shuffle(lr);
+
+  if(lr[1]==1){
+    jx = parseFloat(procx) - jitter[1];
+    corans = 0;
+    console.log("left");
+    console.log(procx);
+    console.log(jx);
+  }
+  else {
+    jx = parseFloat(procx) + jitter[1];
+    corans = 1;
+    console.log("right");
+    console.log(procx);
+    console.log(jx);
+  }
+
   var probecircle = svg.append("circle");
-  probecircle.attr("cx", procx)
+  probecircle.attr("cx", jx)
          .attr("cy", procy)
        .attr('r', pror)
        .attr("fill",profill)
        .attr("stroke",prostroke)
        .attr("stroke-width", prostrokewidth);
-
-  corans = 1; // temporary hack, FIX THIS SHIT
 
   var fixation = svg.append("circle");
   fixation.attr("cx", 1024/2)
@@ -224,7 +242,7 @@ function feedback(){
 }
 
 ////////////////////////////////////////////////////////////////
-// DISPLAY PROBE
+// ITI
 ////////////////////////////////////////////////////////////////
 function ITI(svg){
   clearStimulus(svg);

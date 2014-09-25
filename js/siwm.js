@@ -26,6 +26,9 @@ var lr = [0,1]; //left or right probe
 var del = [1500,2000,2500,3000,3500]; //possible delay periods
 var listenkey = false; //do we want user input now?
 var feedbackmsg = "no feedback"; //feedback message string
+var colors = d3.scale.category20b();
+var ci=0;
+var visualName = "jazz";
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
@@ -82,6 +85,38 @@ function shuffle(array) {
   }
 
   return array;
+}
+
+////////////////////////////////////////////////////////////////
+// CALL EXPLOSION EFFECT
+////////////////////////////////////////////////////////////////
+function doVisual(fmx, fmy) {
+  var fmx = parseFloat(fmx);
+  var fmy = parseFloat(fmy)
+
+//    for (var k = 0; k < 9; k++) {
+//			svg.append("svg:circle")
+//				.attr("cx",fmx).attr("cy",fmy).attr("r",10)
+//				.style("stroke",colors(++ci)).style("fill",colors(++ci))
+//				.transition().duration(800).ease(Math.sqrt)
+//					.attr("cx",fmx+Math.floor(Math.random()*200)-100).attr("cy",fmy+Math.floor(Math.random()*200)-100)
+//					.style("stroke-opacity",1e-6).style("fill-opacity",1e-6).remove();
+//		}
+
+		for (var k = 0; k < 12; k++) {
+			var randx = Math.floor(Math.random()*2000)-1000,
+				randy = Math.floor(Math.random()*2000)-1000;
+				thunnidx=30, thunnidy=30;
+			if (randx < 0){thunnidx *= -1;}
+			if (randy < 0){thunnidy*=-1;}
+			svg.append("svg:line")
+			.attr("x1",fmx).attr("y1",fmy).attr("x2",fmx).attr("y2",fmy)
+			.style("stroke",colors(++ci)).style("stroke-width", "10px")
+			.transition().duration(1000).ease(Math.sqrt)
+				.attr("x1",fmx+randx).attr("y1",fmy+randy)
+				.attr("x2",fmx+randx+thunnidx).attr("y2",fmy+randy+thunnidy)
+				.style("stroke-opacity",0.1).remove();
+		}
 }
 
 ////////////////////////////////////////////////////////////////
@@ -204,7 +239,9 @@ function getresponse(){
 }
 
 function feedback(){
+  clearStimulus(svg);
   if(corans==userans){
+    doVisual(jx, procy);
     feedbackmsg = "Correct!";
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)

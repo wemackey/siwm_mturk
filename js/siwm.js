@@ -7,9 +7,7 @@
 //	Calculate/store variables: %Cor, RT
 //	Incorporate PsiTurk
 //	Configure multiple runs (add "next" button?)
-//	Make it game-like: explosions for correct/incorrect answers?
 //	Add a scoreboard and develop points system (beat high score?)
-//  Add paper ruler to get pixel -> visual angle transform
 //  Add RSVP stream at fixation
 
 ////////////////////////////////////////////////////////////////
@@ -28,7 +26,7 @@ var listenkey = false; //do we want user input now?
 var feedbackmsg = "no feedback"; //feedback message string
 var colors = d3.scale.category20b();
 var ci=0;
-var visualName = "jazz";
+var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
@@ -191,6 +189,21 @@ function delayperiod(svg){
 }
 
 ////////////////////////////////////////////////////////////////
+// RSVP STREAM
+////////////////////////////////////////////////////////////////
+function dispText(svg){
+	svg.selectAll("text").remove();
+	shuffle(let);
+var text = svg.append("text");
+		 text.attr("x", 1024/2)
+         .attr("y", (768/2) - 10)
+		 .attr("font-size",45)
+		 .attr("text-anchor","middle")
+		 .attr("font-weight","bold")
+		 .text (let[1]);
+}
+
+////////////////////////////////////////////////////////////////
 // DISPLAY PROBE
 ////////////////////////////////////////////////////////////////
 function probe(){
@@ -200,16 +213,10 @@ function probe(){
   if(lr[1]==1){
     jx = parseFloat(procx) - jitter[1];
     corans = 0;
-    console.log("left");
-    console.log(procx);
-    console.log(jx);
   }
   else {
     jx = parseFloat(procx) + jitter[1];
     corans = 1;
-    console.log("right");
-    console.log(procx);
-    console.log(jx);
   }
 
   var probecircle = svg.append("circle");

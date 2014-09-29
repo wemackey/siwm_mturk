@@ -28,7 +28,7 @@ var listenkey = false; //do we want user input now?
 var feedbackmsg = "no feedback"; //feedback message string
 var colors = d3.scale.category20b();
 var ci=0;
-var visualName = "jazz";
+var score=0;
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
@@ -94,6 +94,7 @@ function doVisual(fmx, fmy) {
   var fmx = parseFloat(fmx);
   var fmy = parseFloat(fmy)
 
+// Circle explosion
 //    for (var k = 0; k < 9; k++) {
 //			svg.append("svg:circle")
 //				.attr("cx",fmx).attr("cy",fmy).attr("r",10)
@@ -103,7 +104,9 @@ function doVisual(fmx, fmy) {
 //					.style("stroke-opacity",1e-6).style("fill-opacity",1e-6).remove();
 //		}
 
-		for (var k = 0; k < 12; k++) {
+// Confetti explosion
+
+		for (var k = 0; k < 50; k++) {
 			var randx = Math.floor(Math.random()*2000)-1000,
 				randy = Math.floor(Math.random()*2000)-1000;
 				thunnidx=30, thunnidy=30;

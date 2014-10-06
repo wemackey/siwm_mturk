@@ -26,18 +26,12 @@ var listenkey = false; //do we want user input now?
 var feedbackmsg = "no feedback"; //feedback message string
 var colors = d3.scale.category20b();
 var ci=0;
-<<<<<<< HEAD
 var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var score=0; //user score
 var mpx=1; //score multiplier
 var crow=0; //how many correct in a row
-=======
-<<<<<<< HEAD
 var score=0;
-=======
 var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
->>>>>>> FETCH_HEAD
->>>>>>> fe4b480d95a4c9d7a9ea68842d45bbad643fc49f
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES

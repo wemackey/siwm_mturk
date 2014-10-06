@@ -26,7 +26,10 @@ var listenkey = false; //do we want user input now?
 var feedbackmsg = "no feedback"; //feedback message string
 var colors = d3.scale.category20b();
 var ci=0;
-var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var score=0; //user score
+var mpx=1; //score multiplier
+var crow=0; //how many correct in a row
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
@@ -48,6 +51,7 @@ $(document).keyup(onKeyUp);
 // INITIALIZE TASK/TASKLOOP
 ////////////////////////////////////////////////////////////////
 function init(svg) {
+	    dispText(svg);
   return setTimeout(function() {ITI(svg)},500);
  }
 
@@ -201,8 +205,41 @@ var text = svg.append("text");
 		 .attr("text-anchor","middle")
 		 .attr("font-weight","bold")
 		 .text (let[1]);
+		return setTimeout(function() {dispText(svg)},500);
 }
 
+////////////////////////////////////////////////////////////////
+// SCORE UPDATE
+////////////////////////////////////////////////////////////////
+var show_score = function() {
+	remove_word();
+		d3.select("#score")
+			.append("div")
+			.attr("id","disp_score")
+			.style("color","black")
+			.style("text-align","center")
+			.style("font-size","50px")
+			.style("font-weight","400")
+			.style("margin","20px")
+			.text(score);
+	};
+	
+var show_mpx = function() {
+		d3.select("#mpx")
+			.append("div")
+			.attr("id","disp_mpx")
+			.style("color","black")
+			.style("text-align","center")
+			.style("font-size","50px")
+			.style("font-weight","400")
+			.style("margin","20px")
+			.text(mpx);
+	};	
+
+var remove_word = function() {
+		d3.select("#disp_score").remove();
+		d3.select("#disp_mpx").remove();
+	};
 ////////////////////////////////////////////////////////////////
 // DISPLAY PROBE
 ////////////////////////////////////////////////////////////////
@@ -250,6 +287,12 @@ function feedback(){
   if(corans==userans){
     doVisual(jx, procy);
     feedbackmsg = "Correct!";
+	score=score+(100*mpx);
+	crow=crow+1;
+	if (crow==3) {
+		mpx=mpx+1; 
+		crow=0;
+	}
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)
              .attr("cy", 768/2)
@@ -260,6 +303,8 @@ function feedback(){
   }
   else if(userans==null){
     feedbackmsg = "Failed to answer!";
+	crow=0;
+	mpx=1;
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)
              .attr("cy", 768/2)
@@ -270,6 +315,8 @@ function feedback(){
   }
   else {
     feedbackmsg = "Incorrect!";
+	crow=0;
+	mpx=1;
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)
              .attr("cy", 768/2)
@@ -279,10 +326,15 @@ function feedback(){
            .attr("stroke-width", 5);
   }
 
-  // alert(feedbackmsg);
+ 	// alert(feedbackmsg);
+	show_score();
+	show_mpx();
 
-  donetrials = donetrials + 1;
-  return setTimeout(function() {ITI(svg)},1000);
+ 	console.log(score);
+	console.log(mpx);
+	console.log(crow);
+ 	donetrials = donetrials + 1;
+ 	return setTimeout(function() {ITI(svg)},1000);
 }
 
 ////////////////////////////////////////////////////////////////

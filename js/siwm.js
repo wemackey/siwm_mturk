@@ -69,6 +69,8 @@ function init(svg) {
 
 function taskloop(svg){
   if (donetrials<trials){
+	shuffle(showtar);
+	shuffle(letind);
     userans = null;
 	rsvp_done = 0;
 	dispText(svg);
@@ -222,6 +224,7 @@ function delayperiod(svg){
 // RSVP STREAM
 ////////////////////////////////////////////////////////////////
 function dispText(svg){
+	letcount = letcount+1;
 	svg.selectAll("text").remove();
 	shuffle(let);
 var text = svg.append("text");
@@ -232,11 +235,29 @@ var text = svg.append("text");
 		 .attr("font-weight","bold")
 		 .text (let[1]);
 		
-		if (rsvp_done == 0){
-			return setTimeout(function() {dispText(svg)},250);
+		if (showtar[1]==1){
+			if (rsvp_done == 0){
+				if (letcount==letind[1]){
+					return setTimeout(function() {dispTarget(svg)},250);
+				}
+				else {
+					return setTimeout(function() {dispText(svg)},250);
+				}
+			
+			}
+			else {
+				svg.selectAll("text").remove();	
+				letcount = 0;	
+			}	
 		}
-		else {
-			svg.selectAll("text").remove();		
+		else {		
+			if (rsvp_done == 0){
+				return setTimeout(function() {dispText(svg)},250);
+			}
+			else {
+				svg.selectAll("text").remove();	
+				letcount = 0;	
+			}
 		}
 }
 

@@ -210,14 +210,6 @@ function delayperiod(svg){
  	shuffle(del);
 	return setTimeout(get_rsvp,del[1]);
 	
-	shuffle(showtar);
-	if(showtar[1]==1){
-		return setTimeout(dispTarget(svg),del[1]/2);
-    	rsvp_corans = 1;
-	}
-	else {
-    	rsvp_corans = 0;
-	}
 }
 
 ////////////////////////////////////////////////////////////////
@@ -236,6 +228,7 @@ var text = svg.append("text");
 		 .text (let[1]);
 		
 		if (showtar[1]==1){
+			rsvp_corans = 5;
 			if (rsvp_done == 0){
 				if (letcount==letind[1]){
 					return setTimeout(function() {dispTarget(svg)},250);
@@ -250,7 +243,8 @@ var text = svg.append("text");
 				letcount = 0;	
 			}	
 		}
-		else {		
+		else {	
+			rsvp_corans = 6;	
 			if (rsvp_done == 0){
 				return setTimeout(function() {dispText(svg)},250);
 			}
@@ -284,14 +278,7 @@ var text = svg.append("text");
 
 function get_rsvp() {
 	rsvp_done = 1;
-	if(rsvp_ans==rsvp_corans){
-		feedbackmsg = "Correct!";
-	}
-	else{
-		feedbackmsg = "Incorrect!";
-	}
-	
-	console.log(feedbackmsg);
+
 	return setTimeout(function() {probe()},2000);
 }
 
@@ -331,35 +318,45 @@ var remove_word = function() {
 // DISPLAY PROBE
 ////////////////////////////////////////////////////////////////
 function probe(){
-  shuffle(jitter);
-  shuffle(lr);
+	
+	if(rsvp_ans==rsvp_corans){
+		feedbackmsg = "Correct!";
+	}
+	else{
+		feedbackmsg = "Incorrect!";
+	}
+	
+	console.log(feedbackmsg);
+	
+ 	shuffle(jitter);
+ 	shuffle(lr);
 
-  if(lr[1]==1){
-    jx = parseFloat(procx) - jitter[1];
-    corans = 0;
-  }
-  else {
-    jx = parseFloat(procx) + jitter[1];
-    corans = 1;
-  }
+ 	if(lr[1]==1){
+    	jx = parseFloat(procx) - jitter[1];
+    	corans = 0;
+  	}
+  	else {
+    	jx = parseFloat(procx) + jitter[1];
+    	corans = 1;
+  	}
 
-  var probecircle = svg.append("circle");
-  probecircle.attr("cx", jx)
-         .attr("cy", procy)
-       .attr('r', pror)
-       .attr("fill",profill)
-       .attr("stroke",prostroke)
-       .attr("stroke-width", prostrokewidth);
+  	var probecircle = svg.append("circle");
+  	probecircle.attr("cx", jx)
+         	.attr("cy", procy)
+       		.attr('r', pror)
+       		.attr("fill",profill)
+       		.attr("stroke",prostroke)
+       		.attr("stroke-width", prostrokewidth);
 
-  var fixation = svg.append("circle");
-  fixation.attr("cx", 1024/2)
-          .attr("cy", 768/2)
-        .attr('r', 3)
-        .attr("fill","black")
-        .attr("stroke","black")
-        .attr("stroke-width", 3);
+  	var fixation = svg.append("circle");
+  	fixation.attr("cx", 1024/2)
+          	.attr("cy", 768/2)
+        	.attr('r', 3)
+        	.attr("fill","black")
+        	.attr("stroke","black")
+        	.attr("stroke-width", 3);
 
-  return setTimeout(getresponse,1200);
+  	return setTimeout(getresponse,1200);
 }
 
 ////////////////////////////////////////////////////////////////

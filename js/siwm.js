@@ -19,6 +19,8 @@ var ang = [15,25,35,45,55,65,75,105,115,125,135,145,155,165,195,205,215,225,235,
 var ecc = 300; // stimulus eccentricity in pixels from fixation
 var userans = null; //user response (left = 1, right = 0)
 var corans = null; //correct response (left = 1, right = 0)
+var rsvp_ans = null; //rsvp user response (present = 5, absent = 6)
+var rsvp_corans = null; //rsvp correct response (present = 5, absent = 6)
 var jitter = [10,50,100]; //jittered test location widths
 var lr = [0,1]; //left or right probe
 var del = [1500,2000,2500,3000,3500]; //possible delay periods
@@ -27,11 +29,15 @@ var feedbackmsg = "no feedback"; //feedback message string
 var colors = d3.scale.category20b();
 var ci=0;
 var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var tarnum = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var letcount = 0; //which RSVP letter we are on
+var letind = [7,8,9,10,11]; //which RSVP letter position we want to display the target
 var score=0; //user score
 var mpx=1; //score multiplier
 var crow=0; //how many correct in a row
 var score=0;
-var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+var rsvp_done = 0; //start/stop RSVP stream
+var showtar = [0,1]; //show target in RSVP stream (1 = yes, 0 = no)
 
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
@@ -39,11 +45,15 @@ var let =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 function onKeyDown(evt) {
     if (evt.keyCode == 39) userans = 1; // right
     else if (evt.keyCode == 37) userans = 0; // left
+	else if (evt.keyCode == 89) rsvp_ans = 5; // present
+	else if (evt.keyCode == 78) rsvp_ans = 6; // absent
 }
 
 function onKeyUp(evt) {
     if (evt.keyCode == 39) userans = 1; // right
     else if (evt.keyCode == 37) userans = 0; // left
+	else if (evt.keyCode == 89) rsvp_ans = 5; // present
+	else if (evt.keyCode == 78) rsvp_ans = 6; // absent
 }
 
 $(document).keydown(onKeyDown);
@@ -53,13 +63,15 @@ $(document).keyup(onKeyUp);
 // INITIALIZE TASK/TASKLOOP
 ////////////////////////////////////////////////////////////////
 function init(svg) {
-	    dispText(svg);
+	    
   return setTimeout(function() {ITI(svg)},500);
  }
 
 function taskloop(svg){
   if (donetrials<trials){
     userans = null;
+	rsvp_done = 0;
+	dispText(svg);
     drawStimulus(svg);
   }
   else taskend();
@@ -183,18 +195,27 @@ function drawStimulus(svg) {
 // DELAY PERIOD
 ////////////////////////////////////////////////////////////////
 function delayperiod(svg){
-  clearStimulus(svg);
+	clearStimulus(svg);
 
-  var fixation = svg.append("circle");
-  fixation.attr("cx", 1024/2)
-          .attr("cy", 768/2)
-        .attr('r', 3)
-        .attr("fill","black")
-        .attr("stroke","black")
-        .attr("stroke-width", 3);
+	var fixation = svg.append("circle");
+	fixation.attr("cx", 1024/2)
+        	.attr("cy", 768/2)
+        	.attr('r', 3)
+        	.attr("fill","black")
+        	.attr("stroke","black")
+        	.attr("stroke-width", 3);
 
-  shuffle(del);
-  return setTimeout(probe,del[1]);
+ 	shuffle(del);
+	return setTimeout(get_rsvp,del[1]);
+	
+	shuffle(showtar);
+	if(showtar[1]==1){
+		return setTimeout(dispTarget(svg),del[1]/2);
+    	rsvp_corans = 1;
+	}
+	else {
+    	rsvp_corans = 0;
+	}
 }
 
 ////////////////////////////////////////////////////////////////
@@ -210,7 +231,47 @@ var text = svg.append("text");
 		 .attr("text-anchor","middle")
 		 .attr("font-weight","bold")
 		 .text (let[1]);
-		return setTimeout(function() {dispText(svg)},500);
+		
+		if (rsvp_done == 0){
+			return setTimeout(function() {dispText(svg)},250);
+		}
+		else {
+			svg.selectAll("text").remove();		
+		}
+}
+
+////////////////////////////////////////////////////////////////
+// RSVP TARGET STREAM
+////////////////////////////////////////////////////////////////
+function dispTarget(svg){
+	svg.selectAll("text").remove();
+	shuffle(tarnum);
+var text = svg.append("text");
+		 text.attr("x", 1024/2)
+         .attr("y", (768/2) - 10)
+		 .attr("font-size",95)
+		 .attr("text-anchor","middle")
+		 .attr("font-weight","bold")
+		 .text (tarnum[1]);
+		console.log("Showed target")
+		return setTimeout(function() {dispText(svg)},250);
+}
+
+////////////////////////////////////////////////////////////////
+// RSVP RESPONSE
+////////////////////////////////////////////////////////////////
+
+function get_rsvp() {
+	rsvp_done = 1;
+	if(rsvp_ans==rsvp_corans){
+		feedbackmsg = "Correct!";
+	}
+	else{
+		feedbackmsg = "Incorrect!";
+	}
+	
+	console.log(feedbackmsg);
+	return setTimeout(function() {probe()},2000);
 }
 
 ////////////////////////////////////////////////////////////////

@@ -63,14 +63,16 @@ $(document).keyup(onKeyUp);
 // INITIALIZE TASK/TASKLOOP
 ////////////////////////////////////////////////////////////////
 function init(svg) {
-	    
-  return setTimeout(function() {ITI(svg)},500);
+	show_score();
+	show_mpx();    
+	return setTimeout(function() {ITI(svg)},500);
  }
 
 function taskloop(svg){
   if (donetrials<trials){
 	shuffle(showtar);
 	shuffle(letind);
+	rsvp_corans = null;
     userans = null;
 	rsvp_done = 0;
 	dispText(svg);
@@ -292,10 +294,10 @@ var show_score = function() {
 			.attr("id","disp_score")
 			.style("color","black")
 			.style("text-align","center")
-			.style("font-size","50px")
+			.style("font-size","20px")
 			.style("font-weight","400")
-			.style("margin","20px")
-			.text(score);
+			.style("margin","10px")
+			.text("SCORE: " + score);
 	};
 	
 var show_mpx = function() {
@@ -304,10 +306,10 @@ var show_mpx = function() {
 			.attr("id","disp_mpx")
 			.style("color","black")
 			.style("text-align","center")
-			.style("font-size","50px")
+			.style("font-size","20px")
 			.style("font-weight","400")
-			.style("margin","20px")
-			.text(mpx);
+			.style("margin","1px")
+			.text("MP: " + mpx +"x");
 	};	
 
 var remove_word = function() {
@@ -414,9 +416,6 @@ function feedback(){
 	show_score();
 	show_mpx();
 
- 	console.log(score);
-	console.log(mpx);
-	console.log(crow);
  	donetrials = donetrials + 1;
  	return setTimeout(function() {ITI(svg)},1000);
 }

@@ -7,8 +7,7 @@
 //	Calculate/store variables: %Cor, RT
 //	Incorporate PsiTurk
 //	Configure multiple runs (add "next" button?)
-//	Add a scoreboard and develop points system (beat high score?)
-//  Add RSVP stream at fixation
+//  Only get points if RSVP stream is answered correctly?
 
 ////////////////////////////////////////////////////////////////
 // DECLARE TRIAL VARIABLES
@@ -16,7 +15,7 @@
 var trials = 50; //total number of trials per run
 var donetrials = 0; //number of trials completed in this run
 var ang = [15,25,35,45,55,65,75,105,115,125,135,145,155,165,195,205,215,225,235,245,255,285,295,305,315,325,335,345]; // possible angles
-var ecc = 300; // stimulus eccentricity in pixels from fixation
+var ecc = 300; // stimulus eccentricity in pixels from fixation 
 var userans = null; //user response (left = 1, right = 0)
 var corans = null; //correct response (left = 1, right = 0)
 var rsvp_ans = null; //rsvp user response (present = 5, absent = 6)
@@ -173,14 +172,14 @@ function drawStimulus(svg) {
   circle1.attr("cx", 1024/2 + cirx)
          .attr("cy", 768/2 + ciry)
        .attr('r', 10)
-       .attr("fill","black")
-       .attr("stroke","black")
+       .attr("fill","red")
+       .attr("stroke","red")
        .attr("stroke-width", 3);
 
   var fixation = svg.append("circle");
   fixation.attr("cx", 1024/2)
           .attr("cy", 768/2)
-        .attr('r', 3)
+        .attr('r', 30)
         .attr("fill","black")
         .attr("stroke","black")
         .attr("stroke-width", 3);
@@ -204,7 +203,7 @@ function delayperiod(svg){
 	var fixation = svg.append("circle");
 	fixation.attr("cx", 1024/2)
         	.attr("cy", 768/2)
-        	.attr('r', 3)
+        	.attr('r', 30)
         	.attr("fill","black")
         	.attr("stroke","black")
         	.attr("stroke-width", 3);
@@ -223,10 +222,11 @@ function dispText(svg){
 	shuffle(let);
 var text = svg.append("text");
 		 text.attr("x", 1024/2)
-         .attr("y", (768/2) - 10)
+         .attr("y", (768/2) + 17)
 		 .attr("font-size",45)
 		 .attr("text-anchor","middle")
 		 .attr("font-weight","bold")
+		 .attr("fill","white")
 		 .text (let[1]);
 		
 		if (showtar[1]==1){
@@ -241,7 +241,15 @@ var text = svg.append("text");
 			
 			}
 			else {
-				svg.selectAll("text").remove();	
+				svg.selectAll("text").remove();
+				var text = svg.append("text");
+						 text.attr("x", 1024/2)
+				         .attr("y", (768/2) + 17)
+						 .attr("font-size",45)
+						 .attr("text-anchor","middle")
+						 .attr("font-weight","bold")
+						 .attr("fill","white")
+						 .text ("?");	
 				letcount = 0;	
 			}	
 		}
@@ -251,7 +259,15 @@ var text = svg.append("text");
 				return setTimeout(function() {dispText(svg)},250);
 			}
 			else {
-				svg.selectAll("text").remove();	
+				svg.selectAll("text").remove();
+				var text = svg.append("text");
+						 text.attr("x", 1024/2)
+				         .attr("y", (768/2) + 17)
+						 .attr("font-size",45)
+						 .attr("text-anchor","middle")
+						 .attr("font-weight","bold")
+						 .attr("fill","white")
+						 .text ("?");	
 				letcount = 0;	
 			}
 		}
@@ -265,10 +281,11 @@ function dispTarget(svg){
 	shuffle(tarnum);
 var text = svg.append("text");
 		 text.attr("x", 1024/2)
-         .attr("y", (768/2) - 10)
-		 .attr("font-size",95)
+         .attr("y", (768/2) + 17)
+		 .attr("font-size",45)
 		 .attr("text-anchor","middle")
 		 .attr("font-weight","bold")
+		 .attr("fill","white")
 		 .text (tarnum[1]);
 		console.log("Showed target")
 		return setTimeout(function() {dispText(svg)},250);
@@ -353,10 +370,26 @@ function probe(){
   	var fixation = svg.append("circle");
   	fixation.attr("cx", 1024/2)
           	.attr("cy", 768/2)
-        	.attr('r', 3)
+        	.attr('r', 30)
         	.attr("fill","black")
         	.attr("stroke","black")
         	.attr("stroke-width", 3);
+
+	var middle = svg.append("circle");
+	middle.attr("cx", 1024/2)
+		    .attr("cy", 768/2)
+		    .attr('r', 10)
+		    .attr("fill","red")
+		    .attr("stroke","red")
+		    .attr("stroke-width", 3);
+
+	var text = svg.append("text");
+			text.attr("x", 1024/2)
+			.attr("y", (768/2) + 9)
+			.attr("font-size",20)
+			.attr("text-anchor","middle")
+			.attr("fill","red")
+			.text ("<---->");		
 
   	return setTimeout(getresponse,1200);
 }
@@ -382,7 +415,7 @@ function feedback(){
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)
              .attr("cy", 768/2)
-           .attr('r', 3)
+           .attr('r', 30)
            .attr("fill","green")
            .attr("stroke","green")
            .attr("stroke-width", 5);
@@ -394,7 +427,7 @@ function feedback(){
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)
              .attr("cy", 768/2)
-           .attr('r', 3)
+           .attr('r', 30)
            .attr("fill","white")
            .attr("stroke","white")
            .attr("stroke-width", 5);
@@ -406,7 +439,7 @@ function feedback(){
     var fixation = svg.append("circle");
     fixation.attr("cx", 1024/2)
              .attr("cy", 768/2)
-           .attr('r', 3)
+           .attr('r', 30)
            .attr("fill","red")
            .attr("stroke","red")
            .attr("stroke-width", 5);
@@ -428,7 +461,7 @@ function ITI(svg){
   var fixation = svg.append("circle");
   fixation.attr("cx", 1024/2)
           .attr("cy", 768/2)
-        .attr('r', 3)
+        .attr('r', 30)
         .attr("fill","black")
         .attr("stroke","black")
         .attr("stroke-width", 3);

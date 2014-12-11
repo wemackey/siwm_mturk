@@ -384,12 +384,20 @@ function probe(){
 		    .attr("stroke-width", 3);
 
 	var text = svg.append("text");
-			text.attr("x", 1024/2)
+			text.attr("x", 1024/2 - 20)
 			.attr("y", (768/2) + 9)
 			.attr("font-size",20)
 			.attr("text-anchor","middle")
 			.attr("fill","red")
-			.text ("<---->");		
+			.text ("<");
+			
+	var text2 = svg.append("text");
+			text2.attr("x", 1024/2 + 20)
+			.attr("y", (768/2) + 9)
+			.attr("font-size",20)
+			.attr("text-anchor","middle")
+			.attr("fill","red")
+			.text (">");		
 
   	return setTimeout(getresponse,1200);
 }

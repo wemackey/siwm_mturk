@@ -166,8 +166,9 @@ function clearStimulus(svg) {
 function drawStimulus(svg) {
   clearStimulus(svg);
   shuffle(ang);
-  cirx = ecc * Math.cos(ang[1]);
-  ciry = ecc * Math.sin(ang[1]);
+  var angR = ang[1] * Math.PI / 180.0;
+  cirx = ecc * Math.cos(angR);
+  ciry = ecc * Math.sin(angR);
   var circle1 = svg.append("circle");
   circle1.attr("cx", 1024/2 + cirx)
          .attr("cy", 768/2 + ciry)
@@ -307,9 +308,9 @@ function get_rsvp() {
 var show_score = function() {
 	remove_word();
 		d3.select("#score")
-			.append("div")
+			.append("kbd")
 			.attr("id","disp_score")
-			.style("color","black")
+			.style("color","white")
 			.style("text-align","center")
 			.style("font-size","20px")
 			.style("font-weight","400")
@@ -318,10 +319,10 @@ var show_score = function() {
 	};
 	
 var show_mpx = function() {
-		d3.select("#mpx")
-			.append("div")
+		d3.select("#score")
+			.append("kbd")
 			.attr("id","disp_mpx")
-			.style("color","black")
+			.style("color","green")
 			.style("text-align","center")
 			.style("font-size","20px")
 			.style("font-weight","400")

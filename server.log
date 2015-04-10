@@ -39679,3 +39679,507 @@ TemplateNotFound: css/bootstrap.css
 2015-02-23 13:09:43,654 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
 2015-02-23 13:09:43,665 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
 2015-02-23 13:09:43,676 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,018 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,331 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,563 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,749 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,806 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,807 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,814 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,822 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 14:27:58,831 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,024 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,038 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,340 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,440 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,461 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,467 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,468 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,489 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-02-24 16:31:56,489 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,187 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,286 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,671 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,739 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,764 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,852 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,878 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,884 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-03-21 21:32:49,930 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:15,721 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,098 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,165 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,345 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,378 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,399 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,442 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,449 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:35:16,459 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,443 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,473 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,631 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,716 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,806 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,819 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,843 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,864 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:50:51,868 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,321 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,355 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,635 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,777 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,794 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,809 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,877 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,881 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:53:55,894 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:23,680 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:23,694 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:23,841 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:23,891 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:23,992 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:23,996 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:24,003 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:24,017 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:24,031 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:58,490 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:58,722 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,052 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,065 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,074 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,079 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,086 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,094 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 09:55:59,118 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,406 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,661 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,689 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,699 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,730 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,740 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,742 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,763 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:05:02,783 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,350 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,413 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,509 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,657 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,743 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,750 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,753 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,784 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:08:18,793 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:04,895 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,053 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,330 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,480 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,557 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,563 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,585 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,589 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:20:05,595 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,374 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,434 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,467 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,482 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,488 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,491 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,493 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,495 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:25,497 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:21:28,566 Exception on /instruct.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 514, in regularpage
+    return render_template(pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instruct.html
+2015-04-10 10:22:50,955 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,094 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,184 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,390 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,477 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,503 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,517 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,547 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:51,561 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:22:54,727 Exception on /instruct.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 514, in regularpage
+    return render_template(pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instruct.html
+2015-04-10 10:27:55,510 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,526 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,749 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,787 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,807 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,840 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,867 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,876 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:27:55,888 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:47,846 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,022 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,338 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,488 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,494 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,509 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,543 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,554 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:28:48,570 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,030 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,323 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,553 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,595 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,719 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,720 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,722 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,748 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:32:24,760 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,165 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,521 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,635 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,729 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,744 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,747 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,770 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,784 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:36:00,796 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:09,721 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:09,727 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:09,966 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:10,020 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:10,169 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:10,175 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:10,183 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:10,194 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:10,194 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:59,632 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:59,807 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:57:59,971 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:00,167 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:00,196 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:00,234 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:00,267 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:00,275 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:00,286 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:03,394 Exception on /instructions/instruct-4.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 516, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instructions/instruct-4.html
+2015-04-10 10:58:03,406 Exception on /instructions/instruct-5.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 516, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instructions/instruct-5.html
+2015-04-10 10:58:03,419 Exception on /instructions/instruct-6.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 516, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instructions/instruct-6.html
+2015-04-10 10:58:03,431 Exception on /instructions/instruct-7.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 516, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instructions/instruct-7.html
+2015-04-10 10:58:03,441 Exception on /instructions/instruct-8.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 516, in regularpage
+    return render_template(foldername+"/"+pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instructions/instruct-8.html
+2015-04-10 10:58:34,382 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,473 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,556 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,645 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,691 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,776 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,796 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,830 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:34,870 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 10:58:37,958 Exception on /screen_1.png [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 514, in regularpage
+    return render_template(pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: screen_1.png
+2015-04-10 11:02:28,206 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:28,387 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:28,543 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:28,754 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:28,809 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:28,834 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:28,960 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:29,035 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:29,072 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:02:49,807 Exception on /instruct-2.html [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 514, in regularpage
+    return render_template(pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: instruct-2.html
+2015-04-10 11:02:49,803 Exception on /screen_1.png [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 514, in regularpage
+    return render_template(pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: screen_1.png
+2015-04-10 11:03:38,335 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,637 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,759 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,764 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,823 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,860 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,898 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,906 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:38,923 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:03:44,100 Exception on /screen_1.png [GET]
+Traceback (most recent call last):
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/experiment.py", line 514, in regularpage
+    return render_template(pagename)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 127, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 830, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 791, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/environment.py", line 765, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: screen_1.png
+2015-04-10 11:05:54,878 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,186 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,488 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,624 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,643 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,645 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,655 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,677 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js
+2015-04-10 11:05:55,682 /Users/wayne/Library/Enthought/Canopy_64bit/User/lib/python2.7/site-packages/psiturk/psiturk_js/psiturk.js

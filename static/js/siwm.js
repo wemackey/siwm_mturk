@@ -10,12 +10,60 @@
 //  Only get points if RSVP stream is answered correctly?
 
 ////////////////////////////////////////////////////////////////
+// INITIALIZE PSITURK
+////////////////////////////////////////////////////////////////
+//
+// Requires:
+//     psiturk.js
+//     utils.js
+//
+/////////////////////////////////////////////////////////////////
+
+
+// Initalize psiturk object
+var psiTurk = PsiTurk(uniqueId, adServerLoc);
+
+// All pages to be loaded
+var pages = [
+  "instructions/instruct-1.html",
+  "instructions/instruct-2.html",
+  "instructions/instruct-3.html",
+  "instructions/instruct-4.html",
+  "instructions/instruct-5.html",
+  "instructions/instruct-6.html",
+  "instructions/instruct-7.html",
+  "instructions/instruct-8.html",
+  "instructions/instruct-ready.html",
+  "stage.html"
+];
+
+psiTurk.preloadPages(pages);
+
+var instructionPages = [ // add as a list as many pages as you lik
+  "instructions/instruct-1.html",
+  "instructions/instruct-2.html",
+  "instructions/instruct-3.html",
+  "instructions/instruct-4.html",
+  "instructions/instruct-5.html",
+  "instructions/instruct-6.html",
+  "instructions/instruct-7.html",
+  "instructions/instruct-8.html"
+];
+
+// Task object to keep track of the current phase
+var currentview;
+
+var run_num = 1;
+
+var siwm_task = function() {
+
+////////////////////////////////////////////////////////////////
 // DECLARE TRIAL VARIABLES
 ////////////////////////////////////////////////////////////////
 var trials = 50; //total number of trials per run
 var donetrials = 0; //number of trials completed in this run
 var ang = [15,25,35,45,55,65,75,105,115,125,135,145,155,165,195,205,215,225,235,245,255,285,295,305,315,325,335,345]; // possible angles
-var ecc = 300; // stimulus eccentricity in pixels from fixation 
+var ecc = 300; // stimulus eccentricity in pixels from fixation
 var userans = null; //user response (left = 1, right = 0)
 var corans = null; //correct response (left = 1, right = 0)
 var rsvp_ans = null; //rsvp user response (present = 5, absent = 6)
@@ -41,14 +89,14 @@ var showtar = [0,1]; //show target in RSVP stream (1 = yes, 0 = no)
 ////////////////////////////////////////////////////////////////
 // GET KEYPRESS RESPONSES
 ////////////////////////////////////////////////////////////////
-function onKeyDown(evt) {
+var onKeyDown = function(evt) {
     if (evt.keyCode == 39) userans = 1; // right
     else if (evt.keyCode == 37) userans = 0; // left
 	else if (evt.keyCode == 89) rsvp_ans = 5; // present
 	else if (evt.keyCode == 78) rsvp_ans = 6; // absent
 }
 
-function onKeyUp(evt) {
+var onKeyUp = function(evt) {
     if (evt.keyCode == 39) userans = 1; // right
     else if (evt.keyCode == 37) userans = 0; // left
 	else if (evt.keyCode == 89) rsvp_ans = 5; // present
@@ -58,16 +106,18 @@ function onKeyUp(evt) {
 $(document).keydown(onKeyDown);
 $(document).keyup(onKeyUp);
 
+psiTurk.showPage('stage.html');
+
 ////////////////////////////////////////////////////////////////
 // INITIALIZE TASK/TASKLOOP
 ////////////////////////////////////////////////////////////////
-function init(svg) {
+var init = function (svg) {
 	show_score();
-	show_mpx();    
+	show_mpx();
 	return setTimeout(function() {ITI(svg)},500);
  }
 
-function taskloop(svg){
+var taskloop = function (svg){
   if (donetrials<trials){
 	shuffle(showtar);
 	shuffle(letind);
@@ -87,7 +137,7 @@ function taskloop(svg){
 ////////////////////////////////////////////////////////////////
 // SHUFFLE FUNCTION
 ////////////////////////////////////////////////////////////////
-function shuffle(array) {
+var shuffle = function (array) {
   var currentIndex = array.length
     , temporaryValue
     , randomIndex
@@ -109,7 +159,7 @@ function shuffle(array) {
 ////////////////////////////////////////////////////////////////
 // CALL EXPLOSION EFFECT
 ////////////////////////////////////////////////////////////////
-function doVisual(fmx, fmy) {
+var doVisual = function (fmx, fmy) {
   var fmx = parseFloat(fmx);
   var fmy = parseFloat(fmy)
 
@@ -144,7 +194,7 @@ function doVisual(fmx, fmy) {
 ////////////////////////////////////////////////////////////////
 // CREATE STAGE
 ////////////////////////////////////////////////////////////////
-function makeStage(w,h) {
+var makeStage = function (w,h) {
   var svg = d3.select(".container")
      .insert("center")
      .insert("svg")
@@ -156,14 +206,14 @@ function makeStage(w,h) {
 ////////////////////////////////////////////////////////////////
 // CLEAR STAGE
 ////////////////////////////////////////////////////////////////
-function clearStimulus(svg) {
+var clearStimulus = function (svg) {
   svg.selectAll("circle").remove();
 }
 
 ////////////////////////////////////////////////////////////////
 // DRAW STIMULI
 ////////////////////////////////////////////////////////////////
-function drawStimulus(svg) {
+var drawStimulus = function (svg) {
   clearStimulus(svg);
   shuffle(ang);
   var angR = ang[1] * Math.PI / 180.0;
@@ -198,7 +248,7 @@ function drawStimulus(svg) {
 ////////////////////////////////////////////////////////////////
 // DELAY PERIOD
 ////////////////////////////////////////////////////////////////
-function delayperiod(svg){
+var delayperiod = function (svg){
 	clearStimulus(svg);
 
 	var fixation = svg.append("circle");
@@ -211,13 +261,13 @@ function delayperiod(svg){
 
  	shuffle(del);
 	return setTimeout(get_rsvp,del[1]);
-	
+
 }
 
 ////////////////////////////////////////////////////////////////
 // RSVP STREAM
 ////////////////////////////////////////////////////////////////
-function dispText(svg){
+var dispText = function (svg){
 	letcount = letcount+1;
 	svg.selectAll("text").remove();
 	shuffle(let);
@@ -229,7 +279,7 @@ var text = svg.append("text");
 		 .attr("font-weight","bold")
 		 .attr("fill","white")
 		 .text (let[1]);
-		
+
 		if (showtar[1]==1){
 			rsvp_corans = 5;
 			if (rsvp_done == 0){
@@ -239,7 +289,7 @@ var text = svg.append("text");
 				else {
 					return setTimeout(function() {dispText(svg)},250);
 				}
-			
+
 			}
 			else {
 				svg.selectAll("text").remove();
@@ -250,12 +300,12 @@ var text = svg.append("text");
 						 .attr("text-anchor","middle")
 						 .attr("font-weight","bold")
 						 .attr("fill","white")
-						 .text ("?");	
-				letcount = 0;	
-			}	
+						 .text ("?");
+				letcount = 0;
+			}
 		}
-		else {	
-			rsvp_corans = 6;	
+		else {
+			rsvp_corans = 6;
 			if (rsvp_done == 0){
 				return setTimeout(function() {dispText(svg)},250);
 			}
@@ -268,8 +318,8 @@ var text = svg.append("text");
 						 .attr("text-anchor","middle")
 						 .attr("font-weight","bold")
 						 .attr("fill","white")
-						 .text ("?");	
-				letcount = 0;	
+						 .text ("?");
+				letcount = 0;
 			}
 		}
 }
@@ -277,7 +327,7 @@ var text = svg.append("text");
 ////////////////////////////////////////////////////////////////
 // RSVP TARGET STREAM
 ////////////////////////////////////////////////////////////////
-function dispTarget(svg){
+var dispTarget = function (svg){
 	svg.selectAll("text").remove();
 	shuffle(tarnum);
 var text = svg.append("text");
@@ -296,7 +346,7 @@ var text = svg.append("text");
 // RSVP RESPONSE
 ////////////////////////////////////////////////////////////////
 
-function get_rsvp() {
+var get_rsvp = function () {
 	rsvp_done = 1;
 
 	return setTimeout(function() {probe()},2000);
@@ -317,7 +367,7 @@ var show_score = function() {
 			.style("margin","10px")
 			.text("SCORE: " + score);
 	};
-	
+
 var show_mpx = function() {
 		d3.select("#score")
 			.append("kbd")
@@ -328,7 +378,7 @@ var show_mpx = function() {
 			.style("font-weight","400")
 			.style("margin","1px")
 			.text("MP: " + mpx +"x");
-	};	
+	};
 
 var remove_word = function() {
 		d3.select("#disp_score").remove();
@@ -337,17 +387,17 @@ var remove_word = function() {
 ////////////////////////////////////////////////////////////////
 // DISPLAY PROBE
 ////////////////////////////////////////////////////////////////
-function probe(){
-	
+var probe = function (){
+
 	if(rsvp_ans==rsvp_corans){
 		feedbackmsg = "Correct!";
 	}
 	else{
 		feedbackmsg = "Incorrect!";
 	}
-	
+
 	console.log(feedbackmsg);
-	
+
  	shuffle(jitter);
  	shuffle(lr);
 
@@ -391,14 +441,14 @@ function probe(){
 			.attr("text-anchor","middle")
 			.attr("fill","red")
 			.text ("<");
-			
+
 	var text2 = svg.append("text");
 			text2.attr("x", 1024/2 + 20)
 			.attr("y", (768/2) + 9)
 			.attr("font-size",20)
 			.attr("text-anchor","middle")
 			.attr("fill","red")
-			.text (">");		
+			.text (">");
 
   	return setTimeout(getresponse,1200);
 }
@@ -406,11 +456,11 @@ function probe(){
 ////////////////////////////////////////////////////////////////
 // GET USER RESPONSE AND GIVE FEEDBACK
 ////////////////////////////////////////////////////////////////
-function getresponse(){
+var getresponse = function (){
   feedback();
 }
 
-function feedback(){
+var feedback = function (){
   clearStimulus(svg);
   if(corans==userans){
     doVisual(jx, procy);
@@ -418,7 +468,7 @@ function feedback(){
 	score=score+(100*mpx);
 	crow=crow+1;
 	if (crow==3) {
-		mpx=mpx+1; 
+		mpx=mpx+1;
 		crow=0;
 	}
     var fixation = svg.append("circle");
@@ -465,7 +515,7 @@ function feedback(){
 ////////////////////////////////////////////////////////////////
 // ITI
 ////////////////////////////////////////////////////////////////
-function ITI(svg){
+var ITI = function (svg){
   clearStimulus(svg);
   var fixation = svg.append("circle");
   fixation.attr("cx", 1024/2)
@@ -481,17 +531,18 @@ function ITI(svg){
 ////////////////////////////////////////////////////////////////
 // END TASK
 ////////////////////////////////////////////////////////////////
-function taskend(){
+var taskend = function (){
   // alert('Task complete!')
+  run_num = run_num + 1;
 }
 
-function clearButton() {
+var clearButton = function () {
   d3.select(".container")
     .selectAll("button")
     .remove();
 }
 
-function makeButton(text, callback) {
+var makeButton = function (text, callback) {
   d3.select(".buttonbar")
     .insert("button")
     .attr("type", "button")
@@ -500,7 +551,7 @@ function makeButton(text, callback) {
     .on("click", function(d) { console.log("clicked"); callback(); } );
 }
 
-function doTrial(svg) {
+var doTrial = function (svg) {
   clearStimulus(svg);
   // clearButton();
   init(svg);
@@ -510,3 +561,14 @@ function doTrial(svg) {
 var svg = makeStage(1024,768);
 
 doTrial(svg);
+}
+
+/*******************
+ * Run Task
+ ******************/
+$(window).load( function(){
+    psiTurk.doInstructions(
+      instructionPages, // a list of pages you want to display in sequence
+      function() { currentview = new siwm_task(); } // what you want to do when you are done with instructions
+    );
+});
